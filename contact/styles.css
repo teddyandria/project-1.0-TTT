@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+--primaryColor: grey;
+--secondaryColor: purple;
+
+}
