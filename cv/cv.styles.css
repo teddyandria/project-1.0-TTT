@@ -7,23 +7,22 @@
     --fontTitle: 'Pacifico', cursive;
 }
 
-
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.5;
-    background-image: url
+    margin: 0;
+    font-family: Century Gothic;
+    background-image: url(/Images/Background.jpeg);
     background-size: cover;
+    height: 100vh;
 }
 
 
 header {
-    background-color: rgb(96, 8, 96);
+
+    background: linear-gradient(#424875, #424875, #938099);
     margin-top: 5rem;
     display: flex;
     align-items: center;
@@ -39,24 +38,100 @@ header>img {
     align-items: flex-start;
 }
 
-
 .job {
-    margin-top: 1rem;
     text-align: center;
-    margin-bottom: 2rem;
 }
-.job>h1{
+
+.job>h1 {
     font-size: 3rem;
-    font-family: var(--fontTitle);
+    color: #424875;
+  text-shadow: 1px 1px black;
 }
+
 .job>h2 {
+    color: rgb(96, 8, 96);
     font-size: 1.5rem;
 }
-.title{
-    font-family: var(--fontTitle);
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1rem;
+}
+.competence h2{
+border-bottom: solid;
+
+margin-right: 10px;
+margin-bottom: 10px;
+color: #424875;
+}
+.skill {
+    display: flex;
 }
 
-main{ 
-    margin-left: 2rem;
-    margin-right: 2rem;
+.skill .name {
+    display: flex;
+    flex-direction: column;
+    color: #424875;
+    font-size: 1em;
+    font-weight: Normal;
+    margin-right: 20px;
 }
+
+.skill .name span {
+    margin: 5px 0;
+    box-shadow: 2px 2px 3px #D9DADE,
+        -2px -2px 3px #FFFFFF;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 5px solid #ebecf0;
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #d5d6d8;
+}
+
+.skill .name span:hover {
+    box-shadow: 2px 2px 3px #D9DADE,
+        -2px -2px 3px #FFFFFF,
+        inset 2px 2px 3px #D9DADE,
+        inset -2px -2px 3px #FFFFFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar {
+    width: 150px;
+    height: 20px;
+    
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 3px #D9DADE,
+    inset -2px -2px 3px #FFFFFF;
+}
+
+.bar .progress{
+    height: 100%;
+    width: 50%;
+    background-color: #424875;
+    border-radius: 20px;
+}
+
+.bar:nth-child(1) .progress{
+    width: 95%;
+}
+
+.bar:nth-child(2) .progress{
+    width: 95%;
+}
+.bar:nth-child(3) .progress{
+    width: 70%;
+}
+
+
+@
