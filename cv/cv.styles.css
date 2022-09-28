@@ -134,4 +134,8 @@ color: #424875;
 }
 
 
-@
+@media screen and (min-width: 900px){
+    main {
+        column-count: 2;
+    }
+}
