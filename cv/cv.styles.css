@@ -1,25 +1,62 @@
+:root {
+
+    --primaryColor: grey;
+    --secondaryColor: purple;
+    --shadowText: black 1px 1px;
+    --paddingTop: 10px;
+    --fontTitle: 'Pacifico', cursive;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-image: url
+    background-size: cover;
+}
+
+
 header {
     background-color: rgb(96, 8, 96);
-    color: white;
     margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5rem;
+    position: relative;
 }
 
-
-
 header>img {
-    height: 200px;
-    width: auto;
+    height: 260px;
     position: absolute;
+    bottom: 0;
     align-items: flex-start;
 }
 
-.job {}
+
+.job {
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.job>h1{
+    font-size: 3rem;
+    font-family: var(--fontTitle);
+}
+.job>h2 {
+    font-size: 1.5rem;
+}
+.title{
+    font-family: var(--fontTitle);
+}
+
+main{ 
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
