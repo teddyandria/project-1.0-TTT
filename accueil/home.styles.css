@@ -1,0 +1,19 @@
+* {
+box-sizing: border-box;
+margin : 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+}
+
+.Logo {
+display: flex;
+width: 100px;
+}
+
+.menu {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
