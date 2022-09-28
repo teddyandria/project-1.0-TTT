@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(96, 8, 96);
+    color: white;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+header>img {
+    height: 200px;
+    width: auto;
+    position: absolute;
+    align-items: flex-start;
+}
+
+.job {}

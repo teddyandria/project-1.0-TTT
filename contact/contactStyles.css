@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
 }
 
 :root {
@@ -8,11 +9,14 @@
 --secondaryColor: purple;
 --shadowText: black 1px 1px;
 --paddingTop: 10px;
+--fontTitle: 'Pacifico', cursive;
 
 }
 
+
 body {
-    margin:auto;
+    
+    background-image: url("../Images/backImage.jpeg");
     
 }
 
@@ -28,6 +32,7 @@ body {
 
 .gif > img {
     border-radius: 10px;
+    
 }
 
 h1 {
@@ -35,7 +40,17 @@ h1 {
     text-shadow: var(--shadowText);
     display: flex;
     text-align: center;
+    justify-content: center;
     padding-top: var(--paddingTop);
     background-color: var(--secondaryColor);
+    font-family: var(--fontTitle);
+    border-radius: 10px;
     
 }
+
+.form {
+display: flex;
+justify-content: center;
+
+}
+
