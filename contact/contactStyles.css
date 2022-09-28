@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+--primaryColor: grey;
+--secondaryColor: purple;
+--shadowText: black 1px 1px;
+--paddingTop: 10px;
+
+}
+
+body {
+    margin:auto;
+    
+}
+
+.gif {
+    
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    padding-top: var(--paddingTop);
+ 
+    
+}
+
+.gif > img {
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--primaryColor);
+    text-shadow: var(--shadowText);
+    display: flex;
+    text-align: center;
+    padding-top: var(--paddingTop);
+    background-color: var(--secondaryColor);
+    
+}
