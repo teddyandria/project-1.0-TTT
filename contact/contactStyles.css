@@ -16,7 +16,7 @@
 
 body {
     
-    background-image: url("/Images/backImage.jpeg");
+    background-image: url("../Images/backImage.jpeg");
     
 }
 
@@ -49,5 +49,8 @@ h1 {
 }
 
 .form {
-    
+display: flex;
+justify-content: center;
+
 }
+
