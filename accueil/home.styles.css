@@ -6,6 +6,11 @@ text-decoration: none;
 list-style: none;
 }
 
+body{
+background-image:url(/Images/Background.jpeg);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .Logo {
 display: flex;
 width: 100px;
@@ -16,4 +21,24 @@ display: flex;
 flex-direction: column;
 gap: 20px;
 }
+
+section {
+display: flex;
+align-content: center;
+justify-content: center;
+}
+
+.typotype > h1 {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.typotype > h3 {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px;
+}
+
 
