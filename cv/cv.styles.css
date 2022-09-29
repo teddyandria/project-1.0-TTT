@@ -14,14 +14,15 @@
 
 body {
 
-    background-image: url(/Images/taka.jpeg);
+    background-image: url(/Images/IMG_4455.JPG);
     background-size: cover;
 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: white;
+    color: #8b7ed4;
+    font-size: 1em;
 
 }
 
@@ -47,7 +48,7 @@ body {
     position: absolute;
     display: flex;
     bottom: 0;
-    height: 100px;
+    height: 400px;
 }
 
 .profile .img {
@@ -69,13 +70,15 @@ body {
 
 .profile h2 {
     color: #022d42;
-    font-size: 1.5em;
+    font-size: 32px;
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
     font-family: 'Ninja Naruto', arial;
+    text-shadow: 1px 1px 1px #0b0808;
+    
 }
 
 .profile h2 span {
@@ -104,7 +107,7 @@ body {
     background-size: cover;
     background-position: center;
     
-    padding: 90px;
+    padding: 100px;
 }
 
 .about {
@@ -119,6 +122,7 @@ body {
 .title2 {
     color: #aa3b3d;
     font-family: 'Ninja Naruto';
+    text-shadow: 1px 1px 1px black;
 }
 
 
@@ -140,7 +144,7 @@ body {
 
 .about .box .text h4 {
     text-transform: uppercase;
-    color: #2a7da2;
+    color: #1c44a2;
     font-size: 16px;
 }
 
@@ -183,7 +187,6 @@ body {
 
 .right-side .logo img {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     top: 0;
     height: 100px;
