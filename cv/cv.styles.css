@@ -13,15 +13,16 @@
 }
 
 body {
-    background: rgb(2, 17, 95);
-    background-image: url(/Images/taka.jpeg);
+
+    background-image: url(/Images/IMG_4455.JPG);
     background-size: cover;
 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: white;
+    color: #8b7ed4;
+    font-size: 1em;
 
 }
 
@@ -39,7 +40,7 @@ body {
 
 .container .left-side {
     position: relative;
-    background: #460131;
+    background: linear-gradient(to right ,#be5757, #2a7da2, #010f18) ;
     padding: 40px;
 }
 
@@ -47,13 +48,7 @@ body {
     position: absolute;
     display: flex;
     bottom: 0;
-    height: 150px;
-}
-
-.img img {
-    position: relative;
-    height: 200px;
-    width: 200px;
+    height: 400px;
 }
 
 .profile .img {
@@ -74,14 +69,16 @@ body {
 }
 
 .profile h2 {
-    color: rgb(181, 181, 181);
-    font-size: 1.5em;
+    color: #022d42;
+    font-size: 32px;
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
-    font-family: var(--police);
+    font-family: 'Ninja Naruto', arial;
+    text-shadow: 1px 1px 1px #0b0808;
+    
 }
 
 .profile h2 span {
@@ -93,21 +90,13 @@ body {
     padding-top: 40px;
 }
 
-.title {
-    color: #2a3062;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
 .profile {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgb(0, 0, 92);
+    border-bottom: 5px solid rgb(0, 0, 23);
     ;
 }
 
@@ -116,12 +105,14 @@ body {
     background: #ffffff;
     background-image: url(/Images/sasukemoon.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
-    padding: 40px;
+    background-position: center;
+    
+    padding: 100px;
 }
 
 .about {
     margin-bottom: 50px;
+
 }
 
 .about:last-child {
@@ -130,7 +121,10 @@ body {
 
 .title2 {
     color: #aa3b3d;
+    font-family: 'Ninja Naruto';
+    text-shadow: 1px 1px 1px black;
 }
+
 
 .about .box {
     display: flex;
@@ -140,6 +134,7 @@ body {
 
 .about .box .xp {
     min-width: 150px;
+    
 }
 
 .about .box .xp h5 {
@@ -149,7 +144,7 @@ body {
 
 .about .box .text h4 {
     text-transform: uppercase;
-    color: #2a7da2;
+    color: #1c44a2;
     font-size: 16px;
 }
 
@@ -165,6 +160,9 @@ body {
     justify-content: space-between;
 }
 
+.about-skills .box .pourcent img{
+    height: 30px;
+}
 .about-skills .box h4 {
     text-transform: uppercase;
     font-size: 16px;
@@ -175,20 +173,53 @@ body {
     margin-bottom: 0;
 }
 
+
+
 .about-skills {
     margin-bottom: 50px;
 }
 
 
-.right-side .logo{
+.right-side .logo {
     position: relative;
-display: flex;
-justify-content: flex-end;
-
-
+    display: flex;
 }
-.right-side .logo img{
-    position: absolute;
-    height: 150px;
-    padding-bottom: 5px;
+
+.right-side .logo img {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    height: 100px;
 }
+
+@media screen and (max-width: 900px){
+.container 
+{
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+}
+body
+{
+  font-size: 1.5em;  
+}
+
+.left-side .symbole img{
+    visibility: hidden;
+}
+}
+@media screen and (max-width: 600px){
+
+    body{
+        font-size: 1.5em;
+    }
+.about .box
+{
+    flex-direction: column;
+}
+.about .box .xp{
+    min-width: 150px;
+    margin-bottom: 5px;
+}
+}
+    
+
