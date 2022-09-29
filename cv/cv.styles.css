@@ -1,141 +1,164 @@
-:root {
-
-    --primaryColor: grey;
-    --secondaryColor: purple;
-    --shadowText: black 1px 1px;
-    --paddingTop: 10px;
-    --fontTitle: 'Pacifico', cursive;
-}
+@import url(https://fr.allfont.net/allfont.css?fonts=ninja-naruto);
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
 
 body {
-    margin: 0;
-    font-family: Century Gothic;
-    background-image: url(/Images/Background.jpeg);
+    background: rgb(2, 17, 95);
+    background-image: url(/Images/uchiha.jpeg);
     background-size: cover;
-    height: 100vh;
-}
-
-
-header {
-
-    background: linear-gradient(#424875, #424875, #938099);
-    margin-top: 5rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 5rem;
-    position: relative;
-}
-
-header>img {
-    height: 260px;
-    position: absolute;
-    bottom: 0;
-    align-items: flex-start;
-}
-
-.job {
-    text-align: center;
-}
-
-.job>h1 {
-    font-size: 3rem;
-    color: #424875;
-  text-shadow: 1px 1px black;
-}
-
-.job>h2 {
-    color: rgb(96, 8, 96);
-    font-size: 1.5rem;
-}
-
-main {
-    display: flex;
     align-items: center;
-    justify-content: start;
-    margin-left: 1rem;
-}
-.competence h2{
-border-bottom: solid;
-
-margin-right: 10px;
-margin-bottom: 10px;
-color: #424875;
-}
-.skill {
-    display: flex;
-}
-
-.skill .name {
-    display: flex;
-    flex-direction: column;
-    color: #424875;
-    font-size: 1em;
-    font-weight: Normal;
-    margin-right: 20px;
-}
-
-.skill .name span {
-    margin: 5px 0;
-    box-shadow: 2px 2px 3px #D9DADE,
-        -2px -2px 3px #FFFFFF;
-    padding: 5px 20px;
-    text-align: center;
-    border-radius: 20px;
-    border: 5px solid #ebecf0;
-    transition: 0.2s;
-    cursor: pointer;
-    background-color: #d5d6d8;
-}
-
-.skill .name span:hover {
-    box-shadow: 2px 2px 3px #D9DADE,
-        -2px -2px 3px #FFFFFF,
-        inset 2px 2px 3px #D9DADE,
-        inset -2px -2px 3px #FFFFFF;
+    min-height: 100vh;
 }
 
 .container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left-side {
+    position: relative;
+    background: #949393;
+    padding: 40px;
+}
+
+.left-side .symbole img {
+    display: flex;
+    height: 150px;
+}
+
+.img img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.profile .img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.profile .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile h2 {
+    color: #2a3062;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-family: 'Ninja Naruto', arial;
+}
+
+.profile h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contact-info {
+    padding-top: 40px;
+}
+
+.title {
+    color: #2a3062;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    position: relative;
+}
+
+.contact-info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact-info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: red;
+}
+
+.contact-info ul li span {
+    color: #2a3062;
+    font-weight: 300;
+}
+
+.profile {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 92);
+    ;
 }
 
-.bar {
-    width: 150px;
-    height: 20px;
-    
-    margin-right: 0.5rem;
-    border-radius: 20px;
-    box-shadow: inset 2px 2px 3px #D9DADE,
-    inset -2px -2px 3px #FFFFFF;
+.container .right-side {
+    position: relative;
+    background: #ffffff;
+    padding: 40px;
 }
 
-.bar .progress{
-    height: 100%;
-    width: 50%;
-    background-color: #424875;
-    border-radius: 20px;
+.about {
+    margin-bottom: 50px;
 }
 
-.bar:nth-child(1) .progress{
-    width: 95%;
+.about:last-child {
+    margin-bottom: 0;
 }
 
-.bar:nth-child(2) .progress{
-    width: 95%;
-}
-.bar:nth-child(3) .progress{
-    width: 70%;
+.title2 {
+    color: #2a3062;
 }
 
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
 
-@media screen and (min-width: 900px){
-    main {
-        column-count: 2;
-    }
+.about .box .xp {
+    min-width: 150px;
+}
+
+.about .box .xp h5 {
+    text-transform: uppercase;
+    color: red;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
 }
