@@ -1,5 +1,10 @@
 @import url(https://fr.allfont.net/allfont.css?fonts=ninja-naruto);
 
+:root {
+    --police: 'Ninja Naruto', arial;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,12 +14,15 @@
 
 body {
     background: rgb(2, 17, 95);
-    background-image: url(/Images/uchiha.jpeg);
+    background-image: url(/Images/taka.jpeg);
     background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: white;
+
 }
 
 .container {
@@ -31,12 +39,14 @@ body {
 
 .container .left-side {
     position: relative;
-    background: #949393;
+    background: #460131;
     padding: 40px;
 }
 
 .left-side .symbole img {
+    position: absolute;
     display: flex;
+    bottom: 0;
     height: 150px;
 }
 
@@ -64,14 +74,14 @@ body {
 }
 
 .profile h2 {
-    color: #2a3062;
+    color: rgb(181, 181, 181);
     font-size: 1.5em;
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
-    font-family: 'Ninja Naruto', arial;
+    font-family: var(--police);
 }
 
 .profile h2 span {
@@ -91,28 +101,6 @@ body {
     margin-bottom: 20px;
 }
 
-.contact-info ul {
-    position: relative;
-}
-
-.contact-info ul li {
-    position: relative;
-    list-style: none;
-    margin: 10px 0;
-}
-
-.contact-info ul li .icon {
-    display: inline-block;
-    width: 30px;
-    font-size: 18px;
-    color: red;
-}
-
-.contact-info ul li span {
-    color: #2a3062;
-    font-weight: 300;
-}
-
 .profile {
     position: relative;
     display: flex;
@@ -126,6 +114,9 @@ body {
 .container .right-side {
     position: relative;
     background: #ffffff;
+    background-image: url(/Images/sasukemoon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 40px;
 }
 
@@ -138,7 +129,7 @@ body {
 }
 
 .title2 {
-    color: #2a3062;
+    color: #aa3b3d;
 }
 
 .about .box {
@@ -153,7 +144,6 @@ body {
 
 .about .box .xp h5 {
     text-transform: uppercase;
-    color: red;
     font-weight: 600;
 }
 
@@ -161,4 +151,44 @@ body {
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
+}
+
+.about-skills .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about-skills .box .pourcent {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-skills .box h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #2a7da2;
+}
+
+.about-skills:last-child {
+    margin-bottom: 0;
+}
+
+.about-skills {
+    margin-bottom: 50px;
+}
+
+
+.right-side .logo{
+    position: relative;
+display: flex;
+justify-content: flex-end;
+
+
+}
+.right-side .logo img{
+    position: absolute;
+    height: 150px;
+    padding-bottom: 5px;
 }
