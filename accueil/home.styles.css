@@ -17,6 +17,12 @@ body {
 .Logo {
     display: flex;
     width: 70px;
+    padding-top: 5px;
+}
+
+.Logo:hover {
+    transform: rotate(3.142rad);
+    cursor: pointer;
 }
 
 
@@ -77,18 +83,23 @@ button {
 }
 
 ul {
-display: flex;
-justify-content: space-around;
-color: #424875;
-font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    color: #424875;
+    font-weight: bold;
+}
+li:hover {
+   
+    cursor: pointer;
+    
 }
 
 
 @media screen and (max-width : 800px) {
 
-.nav-links ul {
-display: none;
-}
+    .nav-links ul {
+        display: none;
+    }
 
     .Picturehome img {
         width: 100%;
@@ -102,4 +113,3 @@ display: none;
         display: block;
     }
 }
-
