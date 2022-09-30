@@ -14,7 +14,7 @@
 
 body {
 
-    background-image: url(/Images/IMG_4455.JPG);
+    background-image: url(../Images/IMG_4455.JPG);
     background-size: cover;
 
     display: flex;
@@ -103,7 +103,7 @@ body {
 .container .right-side {
     position: relative;
     background: #ffffff;
-    background-image: url(/Images/sasukemoon.jpeg);
+    background-image: url(../Images/sasukemoon.jpeg);
     background-size: cover;
     background-position: center;
     
