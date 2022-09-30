@@ -1,56 +1,124 @@
+
 * {
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
-
---primaryColor: grey;
---secondaryColor: purple;
---shadowText: black 1px 1px;
---paddingTop: 10px;
---fontTitle: 'Pacifico', cursive;
-
+  --primaryColor: grey;
+  --secondaryColor: purple;
+  --shadowText: black 1px 1px;
+  --paddingTop: 10px;
+  --fontTitle:'Lobster', cursive;
 }
-
 
 body {
-    
-    background-image: url("../Images/backImage.jpeg");
-    
+  background-image: url("../Images/IMG_4455.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin:0;
 }
 
+
+.Logo {
+  display: flex;
+  width: 70px;
+}
+
+.navbar {
+  display: flex;
+  margin: 10px;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+
+.navbar li {
+  display: flex;
+  color: rgb(96, 8, 96);
+  font-weight: bold;
+  gap: 10px;
+
+}
+
+
+.navbar .menu-hamb {
+  width: 35px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+
+
+
+
 .gif {
-    
-    height: 185px;
-    display: flex;
-    justify-content: center;
-    padding-top: var(--paddingTop);
- 
-    
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
 
 .gif > img {
-    border-radius: 10px;
-    
+  border-radius: 10px;
 }
+
 
 h1 {
-    color: var(--primaryColor);
-    text-shadow: var(--shadowText);
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-top: var(--paddingTop);
-    background-color: var(--secondaryColor);
-    font-family: var(--fontTitle);
-    border-radius: 10px;
+  color: #424875;
+  text-shadow: var(--shadowText);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: var(--fontTitle);
+  font-size: 50px;
+  margin-top: 50px;
+  
+}
+
+
+@media screen and (max-width : 800px) {
+
+  body {
+    background-image: url("../Images/IMG_4455.JPG");
+    background-size: auto 870px;
     
+    margin:0;
+  }
+
+
+  .nav-links {
+  display: none;
+  }
+
+
+  .navbar .menu-hamb {
+display: block;
+  }
+
+  
+
+  .gif {
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .gif > img {
+    border-radius: 10px;
+  }
+
+
+
+
+
 }
-
-.form {
-display: flex;
-justify-content: center;
-
-}
-
