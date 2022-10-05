@@ -183,7 +183,6 @@ header {
     opacity: 0.75;
     display: flex;
     flex-direction: column;
-
 }
 
 .container .card.card:nth-child(4) .bubbles {
@@ -198,9 +197,17 @@ header {
     border: 1px solid black;
     margin: 20px;
     width: 300px;
-    height: 200px;
+    height: auto;
     background-color: white;
     border-radius: 5%;
+}
+
+.container .card:nth-child(4) .bubble h2 {
+    text-align: center;
+}
+
+.container .card:nth-child(4) .bubble p {
+    margin: 5px;
 }
 
 .container .card:nth-child(4) .title {
@@ -220,7 +227,7 @@ header {
 .container .card:nth-child(5) {
     grid-column: 1 / span 3;
     grid-row: 5/ span 3;
-    background-image: url(../Images/academie.jpeg);
+    background-image: url(../Images/backvillage.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -229,14 +236,19 @@ header {
 }
 
 .container .card:nth-child(5) .title {
-    color: white;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.5px 0.5px white;
+    text-align: center;
+}
+
+.container .card:nth-child(5) .school h2 {
     text-align: center;
 }
 
 .container .card:nth-child(5) .about-school {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 }
@@ -247,7 +259,7 @@ header {
     border-radius: 5%;
     width: 300px;
     height: 200px;
-    margin: 32px;
+
 }
 
 .container .card:nth-child(5) .school p {
@@ -304,7 +316,6 @@ header {
         background-image: url(../Images/katon.png);
         background-size: cover;
         background-position: center;
-
     }
 
     .container .card:nth-child(2) .title {
@@ -316,7 +327,6 @@ header {
         color: rgb(0, 0, 0);
         font-size: 1em;
     }
-
 
     .container .card:nth-child(3) {
         grid-column: 1 / span 3;
@@ -337,10 +347,6 @@ header {
 
     .container .card:nth-child(5) {
         grid-column: 1 / span 3;
-        grid-row: 9;
-    }
-
-    .container .card:nth-child(5) .title {
-        color: white;
+        grid-row: 9 / span 11;
     }
 }
