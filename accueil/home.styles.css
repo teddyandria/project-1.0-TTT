@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'aassassinninjaregular';
-    src: url('/Users/thyphen/Desktop/project-1.0-TTT/Font/w12otf-webfont.woff2') format('woff2'),
-         url('/Users/thyphen/Desktop/project-1.0-TTT/Font/w12otf-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,8 +6,12 @@
     list-style: none;
 }
 
-:visited {
-display: none;
+:root {
+    --fontFamily: 'Special Elite', cursive;
+}
+
+a:visited {
+    color: white;
 }
 
 body {
@@ -25,6 +20,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    font-family: var(--fontFamily);
 }
 
 .navbar ul {
@@ -32,7 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    font-family: 'aassassinninjaregular';
+    font-size: 1.5em;
 }
 
 li:hover {
@@ -67,24 +63,24 @@ img:hover {
 
 .typotype {
     display: flex;
+    min-height: 80vh;
     text-align: center;
     flex-direction: column;
-    padding-top: 390px;
-    padding-bottom: 20px;
+    justify-content: flex-end;
 }
 
 .typotype>h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: flex-end;
+    font-family: var(--fontFamily);
     font-size: 30px;
-    padding-top: 50px;
-    color: #111429;
-    font-family:
+    color: white;
 }
 
-.typotype>h3 {
+.typotype h3 {
     font-size: 25px;
     padding-top: 20px;
-    color: rgb(102, 45, 102)
+    color: rgb(102, 45, 102);
+    padding-bottom: 10px;
 }
 
 .nextbutton {
@@ -94,10 +90,10 @@ img:hover {
 }
 
 button {
-    --glow-color: rgb(20, 68, 126);
-    --glow-spread-color:  rgb(20, 68, 126);
+    --glow-color: rgb(77, 124, 183);
+    --glow-spread-color: rgb(20, 68, 126);
     --enhanced-glow-color: rgb(20, 68, 126);
-    --btn-color: rgb(223, 222, 222);
+    --btn-color: rgb(198, 191, 191);
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
     color: var(--glow-color);
@@ -105,7 +101,7 @@ button {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     background-color: var(--btn-color);
-    border-radius: 1em;
+    border-radius: 10px;
     outline: none;
     box-shadow: 0 0 1em .25em var(--glow-color),
         0 0 4em 1em var(--glow-spread-color),
@@ -125,7 +121,6 @@ button::after {
     width: 100%;
     background-color: var(--glow-spread-color);
     filter: blur(2em);
-    opacity: .7;
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
@@ -142,6 +137,7 @@ button:active {
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
 }
+
 
 @media screen and (max-width : 800px) {
     body {
