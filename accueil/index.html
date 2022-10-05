@@ -15,31 +15,45 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div>
-            <ul>
-                <img class="Logo" src="../Images/logo2.png" alt="Logo" />
-                <li><a href="../accueil/index.html">Accueil </a></li>
-                <li><a href="../cv/cv.html">Expérience</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
-                <img src="../Images/menu-btn.png" alt="hamburger" class="brgbuton">
-            </ul>
-        </div>
+    <nav class="navbar dark-mode" role="navigation">
+        <div class="navbar__logo"> <img class="Logo" src="../Images/logo2.png" alt="Logo" /></div>
+        <ul class="navbar__links">
+            <li class="navbar__link first"><a href="../accueil/index.html">Accueil</a></li>
+            <li class="navbar__link second"><a href="../cv/cv.html">Expérience</a></li>
+            <li class="navbar__link third"><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <button class="burger">
+            <span class="bar"></span>
+            <script src="script.js"></script>
+        </button>
     </nav>
-    <header>
-        <section class="Picturehome">
-        </section>
-        <div class="typotype">
-            <h1> "Âme qui connait l'amour, connait la haine" </h1>
-            <h3> Sasuke Uchiha. </h3>
-        </div>
+    <div class="typotype">
+        <h1> "Âme qui connait l'amour, connait la haine" </h1>
+        <h3> Sasuke Uchiha. </h3>
+    </div>
 
-        <div class="nextbutton">
-            <button><a href="../cv/cv.html">Bienvenue</a></button>
+    <div class="btn-wrap">
+        <span>Bienvenue</span>
+        <div class="container">
+            <a href="#">
+                <ion-icon name="home-sharp"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="folder-open-sharp"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="mail-open-sharp"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+                </ion-icon>
+            </a>
         </div>
-        <footer class="footerproject">Projet N°1, Wild Code School 2022
-        </footer>
-
+    </div>
+    <footer class="footerproject">Projet N°1, Wild Code School 2022
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html
