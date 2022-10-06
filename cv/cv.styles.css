@@ -140,21 +140,25 @@ header {
 
 .container .card:nth-child(2) div {
     margin: 20px;
-    text-align: center;
     border: 1px solid #000;
     background-color: white;
     border-radius: 5%;
     opacity: 0.90;
 }
 
-.container .card:nth-child(2) ul {
-
+.container .card:nth-child(2) p{
+    text-align: center;
+}
+.container .card:nth-child(2) ul{
     position: relative;
     font-family: var(--police);
     list-style: none;
     color: black;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
+
 
 .container .card:nth-child(3) {
     grid-column: 3;
@@ -204,6 +208,8 @@ header {
 
 .container .card:nth-child(4) .bubble h2 {
     text-align: center;
+    font-size: 1em;
+    color: #0278a3;
 }
 
 .container .card:nth-child(4) .bubble p {
@@ -243,6 +249,8 @@ header {
 
 .container .card:nth-child(5) .school h2 {
     text-align: center;
+    font-size: 1em;
+    color: #0278a3;
 }
 
 .container .card:nth-child(5) .about-school {
@@ -250,7 +258,6 @@ header {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 
 .container .card:nth-child(5) .school {
@@ -347,6 +354,6 @@ header {
 
     .container .card:nth-child(5) {
         grid-column: 1 / span 3;
-        grid-row: 9 / span 11;
+        grid-row: 9 / span 12;
     }
 }
