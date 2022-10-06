@@ -14,18 +14,19 @@
 </head>
 
 <body>
-    <header>
-
-        <nav class="navigation">
-
-            <ul class="about">
-                <img class="Logo" src="../Images/logo2.png" alt="Logo" />
-                <li><a href="../accueil/index.html">Accueil</a></li>
-                <li><a href="../cv/cv.html">Experiences</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
+        <nav class="navbar dark-mode" role="navigation">
+            <div class="navbar__logo"> <img class="Logo" src="../Images/logo2.png" alt="Logo" /></div>
+            <ul class="navbar__links">
+                <li class="navbar__link first"><a href="../accueil/index.html">Accueil</a></li>
+                <li class="navbar__link second"><a href="../cv/cv.html">Expérience</a></li>
+                <li class="navbar__link third"><a href="../contact/contact.html">Contact</a></li>
             </ul>
+            <button class="burger">
+                <span class="bar"></span>
+                <script src="script.js"></script>
+            </button>
         </nav>
-    </header>
+
 
     <div class="container">
         <div class="wrapper">
@@ -55,7 +56,7 @@
                             <progress id="susano" max="100" value="100"> 100%</progress>
                         </li>
                         <li>
-                            <label for="katon">Goukakyû no jutsu</label>
+                            <label for="katon">Katon</label>
                             <progress id="katon" max="100" value="100"> 90%</progress>
                         </li>
                         <li>
