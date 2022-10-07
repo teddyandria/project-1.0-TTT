@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,26 +15,27 @@
 </head>
 
 <body>
-        <nav class="navbar dark-mode" role="navigation">
-            <div class="navbar__logo"> <img class="Logo" src="../Images/logo2.png" alt="Logo" /></div>
-            <ul class="navbar__links">
-                <li class="navbar__link first"><a href="../accueil/index.html">Accueil</a></li>
-                <li class="navbar__link second"><a href="../cv/cv.html">Expérience</a></li>
-                <li class="navbar__link third"><a href="../contact/contact.html">Contact</a></li>
-            </ul>
-            <button class="burger">
-                <span class="bar"></span>
-                <script src="script.js"></script>
-            </button>
-        </nav>
-
+     
+    <nav class="navbar dark-mode" role="navigation">
+        <div class="navbar__logo"> <img class="Logo" src="../Images/logo2.png" alt="Logo" /></div>
+        <ul class="navbar__links">
+            <li class="navbar__link first"><a href="../accueil/index.html">Accueil</a></li>
+            <li class="navbar__link second"><a href="../cv/cv.html">Expérience</a></li>
+            <li class="navbar__link third"><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <button class="burger">
+            <span class="bar"></span>
+            <script src="script.js"></script>
+        </button>
+    </nav>
 
     <div class="container">
+        
         <div class="wrapper">
             <article class="card">
                 <h1 class="title">SASUKE UCHIHA</h1>
                 <div>
-                    <p>Avec 7 années d'expériences en tant que protecteur de l'ombre du village de Konoha. J'ai
+                    <p> Dernier survivant du clan Uchiwa. Après que mon frère ainé Itachi ait massacré notre clan, je me suis donné pour mission dans la vie de les venger en tuant Itachi. Avec désormais 7 années d'expériences en tant que protecteur de l'ombre du village de Konoha. J'ai
                         developpé et mis en place des stratégies de defense qui ont permis maintenir la paix et la
                         sérenité au sein du village. Je souhaite mettre mes compétences de Ninja de
                         l'ombre chez vous afin d'améliorer la qualité de vie de vos villageois.</p>
@@ -68,40 +70,53 @@
             </article>
 
             <article class="card">
-                <h1 class="title">Objectif</h1>
                 <div class="bubble">
                     <p>Mon reve pour l'avenir je préfère le garder pour moi. <br>
                         Dans l'immediat, j'ai plutot un objectif:
-                        retablir l'honneur de ma famille et tuer une certaine personne. </p>
+                         retablir l'honneur de ma famille et tuer une certaine personne. </p>
                 </div>
             </article>
-
+            
+            <?php
+            include 'array.php' ?>
+              
             <article class="card">
-                <h1 class="title">Experiences Professionelles</h1>
+            <h1 class="title">Experiences Professionelles</h1>     
+            
                 <div class="bubbles">
+                <?php foreach ($data as $experience){?>
+
                     <div class="bubble">
-                        <h2>2006 - 2010 : Assassin - Akatsuki</h2>
-                        <p>Chasse aux démons à queues.</p>
-                        <p>Principal acteur de la capture du réceptacle d'Hachibi, le démon à 8 queues.</p>
+                    <h2><?php echo $experience['date']?></h2>
+
+                    <?php foreach ($experience['taches'] as $task){?>
+                        <ul>
+                        <li><?php echo $task?></li>
+                        </ul>
+                        
+                    <?php } ?>
                     </div>
-                    <div class="bubble">
+                    
+                    <?php } ?> 
+
+
+                    <!-- <div class="bubble">
                         <h2>2010 - 2012 : Chef d'équipe - Akatsuki</h2>
-                        <p>Management d'équipe</p>
-                        <p>Missions de reconnaissances</p>
-                        <p>Protection de personnes importantes</p>
+                        <p>Management d'équipe.</p>
+                        <p>Missions de reconnaissances.</p>
                     </div>
                     <div class="bubble">
                         <h2>2012 - 2015 : Fantassin - Freelance</h2>
-                        <p>Differentes missions liées à la guerre</p>
+                        <p>Differentes missions liées à la guerre.</p>
                         <p>Participation à la 4ème Grande Guerre Ninja en tant que fantassin en Freelance. Contribution
                             à l'assassinat du général ennemie.</p>
                     </div>
                     <div class="bubble">
                         <h2>2015- Aujourd'hui : Gardien de la paix - Konoha</h2>
-                        <p>Protection du village de Konoha</p>
-                        <p>Responsable de la communication entre konoha et ses alliées</p>
+                        <p>Protection du village de Konoha.</p>
+                        <p>Responsable de la communication entre konoha et ses alliées.</p>
 
-                    </div>
+                    </div> -->
                 </div>
             </article>
 
@@ -110,7 +125,7 @@
                 <div class="about-school">
                     <div class="school">
                         <h2>1999 - 2004 : Academie Ninja - Konoha </h2>
-                        <p>Passage examen Genin. Obtention du bandeau de Ninja</p>
+                        <p>Passage examen Genin. Obtention du bandeau de Ninja.</p>
                     </div>
                     <div class="school">
                         <h2>2004 - 2006 : Formation SVT - Repaire d'Orochimaru</h2>
