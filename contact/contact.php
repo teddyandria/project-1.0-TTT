@@ -67,7 +67,7 @@ function test_input($data)
 
 
 
-  <h1>Contactez moi pour plus de détails !</h1>
+  <h1>Contactez-moi pour plus de détails !</h1>
 
 
 
@@ -83,14 +83,14 @@ function test_input($data)
    <?php } ?>
     
      <label for="fname" name="fname">Prénom : </label>
-    <input type="text" name="fname" id="fname" placeholder="Sasuke" required value="<?= $_POST['fname'] ?>">
+    <input type="text" name="fname" id="fname" placeholder="Naruto" required value="<?= $_POST['fname'] ?>">
     <label for="lname" name="lname">Nom de famille : </label>
-    <input type="text" name="lname" id="lname" placeholder="Uchiwa" required>
+    <input type="text" name="lname" id="lname" placeholder="Uzumaki" required>
     <label for="email" name="email">Adresse e-mail : </label>
     <input type="email" name="email" id="email" placeholder="nom@exemple.com" required>
     <label for="textarea" name="textarea">Message : </label>
     <textarea class="textarea" rows="5" required></textarea>
-    <button class="btnSend">Envoyez</button>
+    <button class="btnSend">Envoyer</button>
 
   </form>
 
