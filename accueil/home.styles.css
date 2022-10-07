@@ -19,11 +19,13 @@
 }
 
 /* Reset */
+
 * {
     box-sizing: border-box;
     outline: none;
     margin: 0;
     padding: 0;
+
 }
 
 ul {
@@ -89,6 +91,7 @@ body {
     width: 100px;
     transition: transform 0.5s ease-in-out;
     align-items: center;
+
 }
 
 .Logo:hover {
@@ -121,9 +124,14 @@ body {
     color: var(--second_color);
     padding-bottom: 15px;
     font-family: var(--fontFamily);
+
+<<<<<<< HEAD
+                                            /* footer */
+=======
 }
 
-                                            /* footer */
+/* footer */
+>>>>>>> 36407054dcf08a11ba2048e9867d1cb06f32e2e3
 .footerproject {
     display: flex;
     flex-direction: column;
@@ -245,8 +253,9 @@ a ion-icon {
     color: rgb(218, 105, 24);
 }
 
-                                        /*  Small device */
-@media screen and (max-width: 767.98px) {
+/*  Small device */
+@media screen and (max-width:767.98px) {
+
     body {
         background-position: 70% 75%;
     }
@@ -418,3 +427,4 @@ a ion-icon {
         transform: scale(1.2);
     }
 }
+
