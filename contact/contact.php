@@ -55,7 +55,7 @@ function test_input($data)
         <div class="navbar__logo"> <img class="Logo" src="../Images/logo2.png" alt="Logo" /></div>
         <ul class="navbar__links">
             <li class="navbar__link first"><a href="../accueil/index.html">Accueil</a></li>
-            <li class="navbar__link second"><a href="../cv/cv.html">Expérience</a></li>
+            <li class="navbar__link second"><a href="../cv/cv.php">Expérience</a></li>
             <li class="navbar__link third"><a href="../contact/contact.php">Contact</a></li>
         </ul>
         <button class="burger">
