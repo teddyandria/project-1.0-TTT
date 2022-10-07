@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,13 +14,13 @@
 </head>
 
 <body>
-     
+
     <nav class="navbar dark-mode" role="navigation">
         <div class="navbar__logo"> <img class="Logo" src="../Images/logo2.png" alt="Logo" /></div>
         <ul class="navbar__links">
             <li class="navbar__link first"><a href="../accueil/index.html">Accueil</a></li>
-            <li class="navbar__link second"><a href="../cv/cv.html">Expérience</a></li>
-            <li class="navbar__link third"><a href="../contact/contact.html">Contact</a></li>
+            <li class="navbar__link second"><a href="../cv/cv.php">Expérience</a></li>
+            <li class="navbar__link third"><a href="../contact/contact.php">Contact</a></li>
         </ul>
         <button class="burger">
             <span class="bar"></span>
@@ -30,7 +29,7 @@
     </nav>
 
     <div class="container">
-        
+
         <div class="wrapper">
             <article class="card">
                 <h1 class="title">SASUKE UCHIHA</h1>
@@ -73,31 +72,31 @@
                 <div class="bubble">
                     <p>Mon reve pour l'avenir je préfère le garder pour moi. <br>
                         Dans l'immediat, j'ai plutot un objectif:
-                         retablir l'honneur de ma famille et tuer une certaine personne. </p>
+                        retablir l'honneur de ma famille et tuer une certaine personne. </p>
                 </div>
             </article>
-            
+
             <?php
             include 'array.php' ?>
-              
+
             <article class="card">
-            <h1 class="title">Experiences Professionelles</h1>     
-            
+                <h1 class="title">Experiences Professionelles</h1>
+
                 <div class="bubbles">
-                <?php foreach ($data as $experience){?>
+                    <?php foreach ($data as $experience) { ?>
 
-                    <div class="bubble">
-                    <h2><?php echo $experience['date']?></h2>
+                        <div class="bubble">
+                            <h2><?php echo $experience['date'] ?></h2>
 
-                    <?php foreach ($experience['taches'] as $task){?>
-                        <ul>
-                        <li><?php echo $task?></li>
-                        </ul>
-                        
+                            <?php foreach ($experience['taches'] as $task) { ?>
+                                <ul>
+                                    <li><?php echo $task ?></li>
+                                </ul>
+
+                            <?php } ?>
+                        </div>
+
                     <?php } ?>
-                    </div>
-                    
-                    <?php } ?> 
 
 
                     <!-- <div class="bubble">
