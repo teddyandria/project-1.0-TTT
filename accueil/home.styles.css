@@ -1,4 +1,4 @@
-                                /* Variables */
+/* Variables */
 :root {
     --font-size: 1rem;
     --fontFamily: "Special Elite", cursive;
@@ -19,13 +19,11 @@
 }
 
 /* Reset */
-
 * {
     box-sizing: border-box;
     outline: none;
     margin: 0;
     padding: 0;
-
 }
 
 ul {
@@ -41,7 +39,7 @@ a:visited {
     color: white;
 }
 
-                                            /* Basic style */
+/* Basic style */
 
 body {
     margin: 0;
@@ -55,7 +53,7 @@ body {
     display: block;
 }
 
-                                                /* Navbar */
+/* Navbar */
 
 .navbar {
     display: flex;
@@ -91,7 +89,6 @@ body {
     width: 100px;
     transition: transform 0.5s ease-in-out;
     align-items: center;
-
 }
 
 .Logo:hover {
@@ -99,7 +96,7 @@ body {
     cursor: pointer;
 }
 
-                                            /*contents */
+/*contents */
 
 .typotype {
     display: flex;
@@ -124,7 +121,6 @@ body {
     color: var(--second_color);
     padding-bottom: 15px;
     font-family: var(--fontFamily);
-
 }
 
 /* footer */
@@ -139,7 +135,7 @@ body {
     font-size: 15px;
 }
 
-                                            /* Home Button */
+/* Home Button */
 
 .btn-wrap {
     display: flex;
@@ -250,8 +246,7 @@ a ion-icon {
 }
 
 /*  Small device */
-@media screen and (max-width:767.98px) {
-
+@media screen and (max-width: 767.98px) {
     body {
         background-position: 70% 75%;
     }
@@ -306,7 +301,7 @@ a ion-icon {
         letter-spacing: 5px;
     }
 
-                                              /* Burger menu */
+                                          /* Burger menu */
     .burger {
         display: block;
         position: relative;
@@ -388,20 +383,12 @@ a ion-icon {
         color: var(--second_color);
         padding-bottom: 15px;
         font-family: var(--fontFamily);
-        padding-bottom: 10%;
+        padding-bottom: 20%;
     }
 
-    .footerproject {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-top: 30px;
-        font-weight: bold;
-        font-size: 15px;
-    }
+   
 
-                                         /*  Medium device */
+    /*  Medium device */
     @media screen and (min-width: 768px) {
         .navbar__link>a::after {
             display: block;
@@ -417,10 +404,9 @@ a ion-icon {
         }
     }
 
-                                             /* other */
+    /* other */
     li:hover {
         cursor: pointer;
         transform: scale(1.2);
     }
 }
-
