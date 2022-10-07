@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -8,136 +7,295 @@
 }
 
 :root {
-  --primaryColor: grey;
-  --secondaryColor: purple;
   --shadowText: black 1px 1px;
   --paddingTop: 10px;
-  --fontTitle:'Lobster', cursive;
+  --fontTitle: "Special Elite", cursive;
+}
+
+a:visited {
+  color: white;
 }
 
 body {
-  background-image: url("../Images/IMG_4455.JPG");
+  background-image: url("../Images/contact2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin:0;
+  margin: 0;
 }
 
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  font-size: 1.1rem;
+  background: black;
+  opacity: 0.75;
+  color: white;
+  font-family: var(--fontTitle);
+
+}
+
+.navbar__links {
+  display: flex;
+  gap: 80px;
+}
+
+.navbar__link {
+  padding: 0 10px;
+}
+
+.navbar__link>a {
+  color: var(--navbar-color);
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+}
 
 .Logo {
-  display: flex;
-  width: 70px;
+  display: block;
+  width: 100px;
+  transition: transform .5s ease-in-out;
+  align-items: center;
 }
 
-ul {
-  display: flex;
-  justify-content: space-around;
-  color: #424875;
-  font-weight: bold;
-  font-size: 25px;
-  text-shadow:#424875 1px 1px;
-}
-li:hover {
- 
+.Logo:hover {
+  transform: rotate(360deg);
   cursor: pointer;
-  
 }
 
-
-.navbar .menu-hamb {
-  width: 35px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-
-
-
-
-
-.gif {
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.gif > img {
-  border-radius: 10px;
-  box-shadow: black 2px 2px 2px 2px;
-}
 
 
 h1 {
-  color: #424875;
+  color: #fdfdfd !important;
   text-shadow: black 3px 3px;
   display: flex;
   text-align: center;
   justify-content: center;
   font-family: var(--fontTitle);
   font-size: 70px;
-  margin-top: 50px;
-  
+  margin-top: 25px;
 }
 
-.mb-3 {
+form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 45px;
+  margin: auto;
+  margin-top: 45px;
+  font-size: 35px;
+  border-radius: 2%;
+}
 
-display: flex;
-justify-content: center;
-font-size: 30px;
+form label {
+  color: white;
+  font-family: var(--fontTitle);
+  text-shadow: black 2px 2px;
+  margin-top: 45px;
+}
+
+label:hover {
+  filter: brightness(90%);
+}
+
+form input {
+  width: 100%;
+  margin: auto;
+  padding: 8px;
+}
+
+.btnSend {
+  margin-top: 35px;
+  padding: 6px;
+  font-size: 20px;
+  font-family: var(--fontTitle);
+}
+
+.footerproject {
+  display: flex;
+  color: white;
+  font-family: var(--fontTitle);
+  width: 100%;
+  height: 20px;
+  justify-content: start;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+}
+
+.msgError {
+color: red;
 font-family: var(--fontTitle);
-color: #f74054;
-text-shadow: black 2px 2px;
-margin-top: 70px;
-flex-direction: column;
+margin-top: 20px;
+font-size: 30px;
+text-shadow: black 1px 1px;
+justify-content: center;
 align-items: center;
-
-
 }
 
-@media screen and (max-width : 800px) {
+.msgError, li{
+  padding: 7px;
+  align-items: center;
+  align-self: center;
+  }
 
+ 
+
+
+@media screen and (max-width: 800px) {
   body {
-    background-image: url("../Images/IMG_4455.JPG");
-    background-size: auto 870px;
-    
-    margin:0;
+    background-image: url("../Images/contact2.jpg");
+    background-size: auto;
+    margin: 0;
   }
-
-
-  .nav-links {
-  display: none;
-  }
-
-
-  .navbar .menu-hamb {
-display: block;
-  }
-
-  
-
-  .gif {
-    height: 185px;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  
-  .gif > img {
-    border-radius: 10px;
-  }
-
 
   h1 {
-    color: #424875;
     text-shadow: black 3px 3px;
     display: flex;
     text-align: center;
     justify-content: center;
     font-family: var(--fontTitle);
     font-size: 50px;
-    margin-top: 50px;
-    
+    margin-top: 20px;
   }
 
+  .navbar__links {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    width: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+}
 
+
+.navbar__links,
+li {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.show-nav .navbar__links {
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0);
+}
+
+.navbar__link {
+    transform: translateX(101%);
+    transition: all .5s ease-in-out;
+}
+
+.show-nav .navbar__link {
+    transform: translateX(0);
+}
+
+.navbar__link>a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--navbar-color);
+    transition: all .4s ease-in-out;
+
+}
+
+.navbar__link>a:hover {
+    padding-left: 2rem;
+    letter-spacing: 5px;
+}
+
+/* Burger menu */
+.burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    transition: all .5s ease-in-out;
+}
+
+.bar::before,
+.bar::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.bar::before {
+    transform: translateY(-12px)
+}
+
+.bar::after {
+    transform: translateY(12px)
+}
+
+.show-nav .bar {
+    width: 0;
+    background: transparent;
+}
+
+.show-nav .bar::before {
+    transform: rotate(45deg);
+}
+
+.show-nav .bar::after {
+    transform: rotate(-45deg);
+}
+
+/* Animations */
+.show-nav .first {
+    transition: all 1s ease-out;
+}
+
+.show-nav .second {
+    transition: all 1.1s ease-out;
+}
+
+.show-nav .third {
+    transition: all 1.2s ease-out;
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 45px;
+    margin: auto;
+    margin-top: 0px;
+    font-size: 35px;
+    border-radius: 2%;
+    bottom: 15px
+  }
+
+  .footerproject{
+  display: none;
+  } 
 }
