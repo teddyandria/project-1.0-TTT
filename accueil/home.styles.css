@@ -18,6 +18,10 @@
     --navbar-bg-color: #000;
 }
 
+
+
+
+
 /* Reset */
 * {
     box-sizing: border-box;
@@ -50,11 +54,16 @@ body {
     background-position: center;
     min-height: 100vh;
     font-family: var(--fontFamily);
+    display: block;
+
 }
 
 
 
+
+
 /* Navbar */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -64,7 +73,6 @@ body {
     background: var(--navbar-bg-color);
     opacity: 0.75;
     color: var(--navbar-color);
-
 }
 
 .navbar__links {
@@ -85,6 +93,8 @@ body {
     display: none;
 }
 
+
+
 .Logo {
     display: block;
     width: 100px;
@@ -97,6 +107,10 @@ body {
     cursor: pointer;
 }
 
+
+
+/*contents */
+
 .typotype {
     display: flex;
     min-height: 80vh;
@@ -106,11 +120,11 @@ body {
     font-weight: bold;
 }
 
-/*contents */
 .typotype h1 {
     justify-content: flex-end;
     font-family: var(--fontFamily);
     font-size: 30px;
+    text-shadow: 1px 1px 2px var(--primary_color);
     color: var(--third_color)
 }
 
@@ -132,6 +146,7 @@ body {
     padding-top: 7px;
     padding-left: 3px;
     font-weight: bold;
+    font-size: 15px;
 }
 
 /* Home Button */
@@ -167,6 +182,7 @@ span {
     line-height: 70px;
     font-weight: bold;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 2px var(--primary_color);
     color: var(--third_color);
     background: var(--second_color);
     padding: 0 18px;
@@ -232,11 +248,11 @@ a ion-icon {
 }
 
 .container a:nth-child(2) ion-icon {
-    color: green;
+    color: red;
 }
 
 .container a:nth-child(3) ion-icon {
-    color: red;
+    color: green;
 }
 
 .container a:nth-child(4) ion-icon {
