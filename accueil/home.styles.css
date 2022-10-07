@@ -1,7 +1,7 @@
-/* Variables */
+                                /* Variables */
 :root {
     --font-size: 1rem;
-    --fontFamily: 'Special Elite', cursive;
+    --fontFamily: "Special Elite", cursive;
     --primary_color: rgb(12, 42, 76);
     --second_color: rgb(254, 248, 239);
     --third_color: rgb(142, 93, 142);
@@ -10,17 +10,13 @@
 
 .light-mode {
     --navbar-color: #222;
-    --navbar-bg-color: #F0F0F0;
+    --navbar-bg-color: #f0f0f0;
 }
 
 .dark-mode {
-    --navbar-color: #FFF;
+    --navbar-color: #fff;
     --navbar-bg-color: #000;
 }
-
-
-
-
 
 /* Reset */
 * {
@@ -43,7 +39,7 @@ a:visited {
     color: white;
 }
 
-/* Basic style */
+                                            /* Basic style */
 
 body {
     margin: 0;
@@ -55,14 +51,9 @@ body {
     min-height: 100vh;
     font-family: var(--fontFamily);
     display: block;
-
 }
 
-
-
-
-
-/* Navbar */
+                                                /* Navbar */
 
 .navbar {
     display: flex;
@@ -93,12 +84,10 @@ body {
     display: none;
 }
 
-
-
 .Logo {
     display: block;
     width: 100px;
-    transition: transform .5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     align-items: center;
 }
 
@@ -107,9 +96,7 @@ body {
     cursor: pointer;
 }
 
-
-
-/*contents */
+                                            /*contents */
 
 .typotype {
     display: flex;
@@ -125,7 +112,7 @@ body {
     font-family: var(--fontFamily);
     font-size: 30px;
     text-shadow: 1px 1px 2px var(--primary_color);
-    color: var(--third_color)
+    color: var(--third_color);
 }
 
 .typotype h3 {
@@ -136,8 +123,7 @@ body {
     font-family: var(--fontFamily);
 }
 
-
-/* footer */
+                                            /* footer */
 .footerproject {
     display: flex;
     flex-direction: column;
@@ -149,7 +135,7 @@ body {
     font-size: 15px;
 }
 
-/* Home Button */
+                                            /* Home Button */
 
 .btn-wrap {
     display: flex;
@@ -160,7 +146,7 @@ body {
     padding: 0 18px;
     background: var(--primary_color);
     box-shadow: 0px 4px 10px 1px rgba (0, 0, 0, 0.2);
-    opacity: 0.90;
+    opacity: 0.9;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -168,7 +154,7 @@ body {
 }
 
 .btn-wrap:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 span {
@@ -194,7 +180,7 @@ a ion-icon {
     font-size: 28px;
     background: transparent;
     transform: scale(0.1);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-wrap:hover span {
@@ -224,7 +210,7 @@ a ion-icon {
 
 .btn-wrap:hover a ion-icon {
     opacity: 1;
-    transform: scale(1)
+    transform: scale(1);
 }
 
 .container a ion-icon:nth-last-of-type(1) {
@@ -259,12 +245,8 @@ a ion-icon {
     color: rgb(218, 105, 24);
 }
 
-
-
-
-/*  Small device */
-@media screen and (max-width:767.98px) {
-
+                                        /*  Small device */
+@media screen and (max-width: 767.98px) {
     body {
         background-position: 70% 75%;
     }
@@ -281,9 +263,8 @@ a ion-icon {
         right: 0;
         background: var(--navbar-bg-color);
         transform: translateX(100%);
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
-
 
     .navbar__links,
     li {
@@ -300,7 +281,7 @@ a ion-icon {
 
     .navbar__link {
         transform: translateX(101%);
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .show-nav .navbar__link {
@@ -312,8 +293,7 @@ a ion-icon {
         padding: 1rem;
         font-size: 1.6rem;
         color: var(--navbar-color);
-        transition: all .4s ease-in-out;
-
+        transition: all 0.4s ease-in-out;
     }
 
     .navbar__link>a:hover {
@@ -321,7 +301,7 @@ a ion-icon {
         letter-spacing: 5px;
     }
 
-    /* Burger menu */
+                                              /* Burger menu */
     .burger {
         display: block;
         position: relative;
@@ -339,7 +319,7 @@ a ion-icon {
         height: 4px;
         border-radius: 3px;
         background: var(--navbar-color);
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .bar::before,
@@ -351,15 +331,15 @@ a ion-icon {
         left: 0;
         background: var(--navbar-color);
         border-radius: 3px;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .bar::before {
-        transform: translateY(-12px)
+        transform: translateY(-12px);
     }
 
     .bar::after {
-        transform: translateY(12px)
+        transform: translateY(12px);
     }
 
     .show-nav .bar {
@@ -388,15 +368,43 @@ a ion-icon {
         transition: all 1.2s ease-out;
     }
 
-    /*  Medium device */
-    @media screen and (min-width:768px) {
+    .typotype h1 {
+        justify-content: flex-end;
+        font-family: var(--fontFamily);
+        font-size: 30px;
+        text-shadow: 1px 1px 2px var(--primary_color);
+        color: var(--third_color);
+        padding-bottom: 10%;
+    }
+
+    .typotype h3 {
+        font-size: 35px;
+        padding-top: 20px;
+        color: var(--second_color);
+        padding-bottom: 15px;
+        font-family: var(--fontFamily);
+        padding-bottom: 10%;
+    }
+
+    .footerproject {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+                                         /*  Medium device */
+    @media screen and (min-width: 768px) {
         .navbar__link>a::after {
             display: block;
             content: "";
             width: 0;
             height: 1px;
             background: var(--navbar-color);
-            transition: width .4s;
+            transition: width 0.4s;
         }
 
         .navbar__link:hover>a::after {
@@ -404,7 +412,7 @@ a ion-icon {
         }
     }
 
-    /* other */
+                                             /* other */
     li:hover {
         cursor: pointer;
         transform: scale(1.2);
