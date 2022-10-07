@@ -125,13 +125,9 @@ body {
     padding-bottom: 15px;
     font-family: var(--fontFamily);
 
-<<<<<<< HEAD
-                                            /* footer */
-=======
 }
 
 /* footer */
->>>>>>> 36407054dcf08a11ba2048e9867d1cb06f32e2e3
 .footerproject {
     display: flex;
     flex-direction: column;
